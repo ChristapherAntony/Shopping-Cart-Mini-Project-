@@ -1,0 +1,31 @@
+<body class="user-loginBody">
+    <div class="outer  ">
+        <h2>Administrator Login Page </h2>
+        <form action="/admin" id="login" method="POST">
+            <div class="form-group">
+                <label for="inputEmail4">Email Id <span class="text-danger">*</span></label>
+                <input type="email" class="form-control" name="email" id="inputEmail4" placeholder="Enter your email id"
+                    required>
+
+                <label for="inputPassword4">Password <span class="text-danger">*</span></label>
+                <input type="password" class="form-control" name="password" id="inputPassword4"
+                    placeholder="Enter Your Password" required>
+                <br>
+                {{#if error}}
+                <h6 class="text-warning"> Invalid Credentials !</h6>
+                {{/if}}
+
+                <button type="submit" class="btn btn-secondary">Sign in</button>
+
+                <a class="text-decoration-none text-white admin" href="/login">Login and Shop Right Now</a>
+            </div>
+
+
+        </form>
+
+
+
+
+    </div>
+
+</body>

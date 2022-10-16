@@ -1,0 +1,74 @@
+#name-error, #email-error, #password-error, #pw1-error,#confirm-error,#submit-error{
+    color: rgb(255,193,9);
+}
+
+.loginBody {
+    
+    background-image: url("/images/3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.outer {
+    background: rgba(4, 4, 4, 0.6);
+    border-radius: 1rem;
+    width: 30%;
+    padding: 10px;
+    margin: auto;
+    margin-top: 200px;
+    color: white;
+    position: relative;
+}
+.admin{
+    position: absolute;
+    right: 1rem;
+}
+/**************************************/
+.signUpBody {
+    
+    background-image: url("/images/4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.outerBoxSignUP {
+    background: rgba(4, 4, 4, 0.6);
+    width: 40%;
+    padding: 10px;
+    margin: auto;
+    margin-top: 12%;
+    color: white;
+    border-radius: 1rem;
+
+}
+
+
+/*******************************/
+.user-loginBody{
+    background-color: lightslategrey;
+}
+
+
+
+/**********************/
+.editBody{
+    background-image: url("/images/edit.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.outerBoxEdit{
+    background: rgba(0, 0, 0, 0.6);
+    width: 35%;
+    padding: 10px;
+    margin: auto;
+    margin-top: 10%;
+    margin-left: 35%;
+    color: white;
+    border-radius: 1rem;
+
+
+}
+.form-control{
+    margin-top: .5rem;
+}

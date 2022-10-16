@@ -1,0 +1,45 @@
+<body class="editBody">
+
+    <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 outerBoxEdit ">
+            <form action="/admin/addUser" method="post" role="form" enctype="application/x-www-form-urlencoded">
+                <h1 class="pb-5 pt-3">Add a New User Account</h1>
+
+                <div class="form-group">
+                    <label for="first_name">Name</label>
+                    <input type="text"  class="form-control"  name="Name" id="name" placeholder="Enter Full Name" onkeyup="validateName()"   >
+                    <span id="name-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control" name="Email" id="email" placeholder="Email Address" onkeyup=" validateEmail()" >
+                    <span id="email-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="pw">Password</label>
+                    <input type="password" class="form-control" name="Password" id="password1" onkeyup="validatePassword()" >
+                    <span id = "pw1-error" ></span>
+
+                </div>
+                <div class="form-group">
+                    <label for="pw">Confirm Password</label>
+                    <input type="password" class="form-control" id="password2" onkeyup="validateConfirmPwd()"  >
+                    <span id = "confirm-error" ></span>
+
+                </div>
+                
+                {{#if emailError}}
+                <p class="text-warning">{{'emailError'}}</p>
+                {{/if}}
+
+                <button onclick="return validateForm()" type="submit" class="btn btn-secondary"  >Add user</button>
+                <a href="/admin/allUsers" class="btn btn-secondary ">Cancel</a><br>
+                <span id="submit-error"></span>
+                
+            </form>
+        </div>
+    </div>
+</div>
+</body>

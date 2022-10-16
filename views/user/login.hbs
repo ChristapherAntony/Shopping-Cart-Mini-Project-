@@ -1,0 +1,33 @@
+<body class="loginBody">
+    <div class="outer  ">
+
+        <h2>Login Page</h2>
+        <form action="/login" id="login" method="POST">
+            <div class="form-group">
+                <label for="inputEmail4">Email Id <span class="text-danger">*</span></label>
+                <input type="email" class="form-control" name="Email" id="email"onkeyup=" validateEmail()"
+                    placeholder="Enter your email id" required>
+                    <span id="email-error"></span><br>
+
+                <label for="inputPassword4">Password <span class="text-danger">*</span></label>
+                <input type="password" class="form-control" name="Password" id="inputPassword4"
+                    placeholder="Enter Your Password" required>
+                <br>
+                {{#if error}}
+                <h6 class="text-warning"> Invalid Credentials !</h6>
+                {{/if}}
+
+                <button type="submit" class="btn btn-secondary">Sign in</button>
+                <br><br>
+                <a class="text-decoration-none text-white" href="/signUp">Create user Account</a>
+                <a class="text-decoration-none text-white admin" href="/admin/admin-login">Admin</a>
+
+            </div>
+ 
+
+        </form>
+
+
+    </div>
+
+</body>
